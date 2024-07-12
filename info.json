@@ -1,0 +1,160 @@
+{
+  "user_guide_file": "Head Angle App Guide.pdf",
+  "app_name": "Head Angle",
+  "app_description": "Measure and Head tilt, obliquity rotation angle. <br><br>Nodes Required: 2 <br> -Sensing (2): thorax (thorax center, switch pointing up), forehead (forehead center, switch pointing up) <br><br>",
+  "app_id": "021",
+  "app_version": "1_0",
+  "validated_version_range": [
+    "3.20.1",
+    "4.1.0"
+  ],
+  "version_id": "02110",
+  "parameters_setting": [
+    [
+      "Test Settings",
+      {
+        "source": "operation_time",
+        "title": "Operation Time Limit",
+        "type": "float",
+        "description": "How long each task should take."
+      },
+      {
+        "source": "body_position",
+        "title": "How is the participant positioned?",
+        "type": "combo",
+        "validation": [
+          "Auto Detect",
+          "Horizontal",
+          "Vertical"
+        ],
+        "description": "This app can automatically detect the orientation of the body, but you can also manually override it, by selecting one of the other options. Vertical would be if they are standing up, or sitting upright. Horizontal would be laying down."
+      },
+      {
+        "source": "audio_prompts_enable",
+        "title": "Enable Audio Prompts",
+        "type": "bool",
+        "description": "Enable audio prompts such as 'turn your head to the left' is said."
+      }
+    ],
+    [
+      "Save Options",
+      {
+        "source": "save_mode",
+        "title": "Save Mode",
+        "type": "combo",
+        "validation": [
+          "csv",
+          "h5",
+          "xlsx",
+          "none"
+        ],
+        "description": "Save file in specified format"
+      }
+    ],
+    [
+      "Report Options",
+      {
+        "source": "save_report",
+        "title": "Save Report",
+        "type": "bool",
+        "description": "Save a report of the trial"
+      },
+      {
+        "source": "trial_notes",
+        "title": "Additional Notes",
+        "type": "text",
+        "description": "Enter any notes here you want entered on the report."
+      },
+      {
+        "source": "chart_type",
+        "title": "Chart Type",
+        "type": "combo",
+        "validation": [
+          "Bullet",
+          "Line",
+          "All",
+          "none"
+        ],
+        "description": "Select the type of charts you want displayed on the report."
+      }
+    ]
+  ],
+  "user_fields": [
+    {
+      "name": "time",
+      "data_type": "float",
+      "size": 1
+    },
+    {
+      "name": "body_orientation",
+      "data_type": "int",
+      "size": 1
+    },
+    {
+      "name": "head_tilt",
+      "data_type": "float",
+      "size": 1
+    },
+    {
+      "name": "head_obliquity",
+      "data_type": "float",
+      "size": 1
+    },
+    {
+      "name": "head_rotation",
+      "data_type": "float",
+      "size": 1
+    },
+    {
+      "name": "max_head_rotation",
+      "data_type": "float",
+      "size": 1
+    },
+    {
+      "name": "min_head_rotation",
+      "data_type": "float",
+      "size": 1
+    },
+    {
+      "name": "max_head_tilt",
+      "data_type": "float",
+      "size": 1
+    },
+    {
+      "name": "min_head_tilt",
+      "data_type": "float",
+      "size": 1
+    },
+    {
+      "name": "max_head_obliquity",
+      "data_type": "float",
+      "size": 1
+    },
+    {
+      "name": "min_head_obliquity",
+      "data_type": "float",
+      "size": 1
+    },
+    {
+      "name": "annotations",
+      "data_type": "str",
+      "size": 1
+    },
+    {
+      "name": "audio_feedback",
+      "data_type": "str",
+      "size": 1
+    },
+    {
+      "name": "user_defined_status",
+      "data_type": "str",
+      "size": 1
+    }
+  ],
+  "sensors": [
+    "forehead",
+    "thorax"
+  ],
+  "feedback": [],
+  "datarate": 100
+}

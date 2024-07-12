@@ -1,0 +1,16 @@
+{
+  "audio_prompts_enable": true,
+  "chart_type": "Bullet",
+  "last_connect_feedback": [],
+  "last_connect_sensors": [
+    "18:04:ED:7E:8B:D5",
+    "88:6B:0F:4F:7D:ED"
+  ],
+  "local_time": "2024-06-19-10-12-41",
+  "operation_time": 4,
+  "save_mode": "xlsx",
+  "save_report": true,
+  "trial_name": "app_standards_13",
+  "trial_notes": "Testing for a customer Demo",
+  "body_position": "Auto Detect"
+}
