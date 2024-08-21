@@ -3,8 +3,8 @@ This app is used to measure the head angles: obliquity, rotation, and tilt. This
 
 ### Nodes Required: 2 
 - Sensing (2): 
-  - forehead (Superiorly)
-  - thorax (Superiorly -- switch pointing towards head)
+  - forehead (switch pointing superiorly)
+  - thorax (switch pointing superiorly)
 - Feedback (0)
   
 ## Algorithm & Calibration
